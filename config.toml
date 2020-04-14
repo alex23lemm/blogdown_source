@@ -9,10 +9,6 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
 disqusShortname = "alex23lemm-github-io"
 googleAnalytics = "UA-55248554-4"
 
@@ -66,3 +62,10 @@ publishDir = "../alex23lemm.github.io"
     icon = "fab fa-linkedin"
     weight = 3
     url = "https://www.linkedin.com/in/alexanderlemm/"
+    
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url = "/posts/"
