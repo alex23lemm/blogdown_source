@@ -9,7 +9,7 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
-disqusShortname = "alex23lemm-github-io"
+disqusShortname = "alex23lemm-github-io-1"
 googleAnalytics = "UA-55248554-4"
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -18,7 +18,7 @@ publishDir = "../alex23lemm.github.io"
 [params]
     author = "Alex Lemm"
     description = "Alex Lemm's personal website"
-    keywords = "blog,analytics,personal,r,pmml,datascience"
+    keywords = "blog,analytics,personal,r,datascience,aws"
     info = "Analytics / R / Growth"
     avatarurl = "images/round2.png"
     footercontent = ""
@@ -41,6 +41,10 @@ publishDir = "../alex23lemm.github.io"
     
     # Custom JS
     custom_js = []
+    
+[markup]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [taxonomies]
   category = "categories"
