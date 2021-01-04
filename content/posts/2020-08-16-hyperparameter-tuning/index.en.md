@@ -585,4 +585,4 @@ Even though the accuracy for the test set predictions is quite high, the model d
 
 In this article we explained the underlying mechanisms of SageMaker hyperparameter tuning jobs and showcased how to start tuning jobs using the Estimator object/HyperparameterTuner object combination. We created some plots visualizing the progress and results of the tuning job. Finally, we used a Transformer object to start a batch inference job to make test set predictions using the best model and evaluated the final model performance in R. 
 
-[In the next article of the series]() we will have a have a deep dive on model deployment for real-time predictions. 
+[In the next article of the series](../2020-09-19-model-deployment-for-real-time-predictions) we will have a have a deep dive on model deployment for real-time predictions. 
