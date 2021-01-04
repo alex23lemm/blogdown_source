@@ -1,5 +1,5 @@
 ---
-title: SageMaker fundamentals for R users 02 - Training a model with a built-in algorithm
+title: "SageMaker fundamentals for R users - 02: Train a model with a built-in algo"
 author: Alex Lemm
 date: '2020-07-09'
 slug: []

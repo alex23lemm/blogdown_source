@@ -1,5 +1,5 @@
 ---
-title: SageMaker fundamentals for R users 01 - Connecting RStudio to SageMaker
+title: "SageMaker fundamentals for R users - 01: Connecting RStudio to SageMaker"
 author: 'Alex Lemm'
 date: '2020-06-30'
 slug: []

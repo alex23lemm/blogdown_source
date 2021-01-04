@@ -1,5 +1,5 @@
 ---
-title: SageMaker fundamentals for R users 03 - Hyperparameter tuning
+title: "SageMaker fundamentals for R users - 03: Hyperparameter tuning"
 author: Alex Lemm
 date: '2020-08-16'
 slug: []

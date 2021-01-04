@@ -1,5 +1,5 @@
 ---
-title: SageMaker fundamentals for R users 04 - Model deployment for real-time predictions
+title: "SageMaker fundamentals for R users - 04: Model deployment"
 author: Alex Lemm
 date: '2020-09-19'
 slug: []
