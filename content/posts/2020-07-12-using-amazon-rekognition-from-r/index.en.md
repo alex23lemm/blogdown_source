@@ -10,7 +10,7 @@ externalLink: ''
 series: []
 ---
 
-In this article we will demostrate how to access Amazon Rekognition using the fabulous [paws package](https://github.com/paws-r/paws), an AWS SDK for R, created by [David Kretch](https://github.com/davidkretch) and [Adam Banker](https://github.com/adambanker).
+In this article we will demonstrate how to access Amazon Rekognition using the fabulous [paws package](https://github.com/paws-r/paws), an AWS SDK for R, created by [David Kretch](https://github.com/davidkretch) and [Adam Banker](https://github.com/adambanker).
 
 [Amazon Rekognition](https://aws.amazon.com/rekognition/) is a service for image and video analysis which comes with pre-trained deep learning models and a simple API which makes it easy for developers to add these analytics capabilities to their applications.  
 
@@ -25,7 +25,8 @@ Some of Amazon Rekognition's features include:
 
 In the examples below we will focus on how Rekognition's “text-in-image” and “face comparison” features work using R. Following along it will be easy for you to apply your new knowledge to using the other features later on your own. 
 
-But first we need to make sure that our setup is complete.
+The entire code of this article is also part of the self-paced and fully reproducible AWS AI Services for R users workshop that you can [download from GitHub here](https://github.com/alex23lemm/AWS-AI-Services-R-Workshop).
+
 
 ## Prerequisites
 
@@ -354,11 +355,3 @@ Second Hurray! Testing Rekognition's face comparison feature was also a success 
 ## Summary
 
 It is great that Python's `boto3` finally has an R brother. The `paws` package makes it really easy to access Amazon Rekognition and other AWS services from R. R users can use image and video analysis capabilities without being experts in deep learning. The trickiest part when using `paws` is figuring out a clever way to parse the response coming from the API. But with the recipes and packages used above for parsing S3 and Rekognition API responses, you now should have have some best practices available on your end to get started quickly.
-
-The entire code of this article is also part of a self-paced and fully reproducible workshop that you can [download from GitHub here](https://github.com/alex23lemm/AWS-AI-Services-R-Workshop).
-
-Keep on building!
-
-
-
-
