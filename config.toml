@@ -23,7 +23,7 @@ publishDir = "../alex23lemm.github.io"
     avatarurl = "images/round2.png"
     footercontent = ""
 
-    dateformat = "January 2, 2006"
+    dateformat = "Jan 2, 2006"
 
     hideCredits = false
     hideCopyright = false
