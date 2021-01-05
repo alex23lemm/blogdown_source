@@ -5,7 +5,7 @@ date: '2020-09-19'
 slug: []
 categories: []
 tags: []
-description: ''
+description: "This article describes how to deploy a machine learning model as a SageMaker HTTPS endpoint using RStudio and how to make real-time predictions against it."
 externalLink: ''
 series: []
 ---

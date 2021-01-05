@@ -5,7 +5,7 @@ date: '2020-07-09'
 slug: []
 categories: []
 tags: []
-description: ''
+description: "This article explains how to use RStudio to start a SageMaker training job using the built-in XGBoost algorithm to solve a binary classification problem and a batch inference job to evaluate the final model performance. Along the way we have a closer look at the underlying mechanisms of SageMaker training jobs and SageMaker batch inference jobs."
 externalLink: ''
 series: []
 ---

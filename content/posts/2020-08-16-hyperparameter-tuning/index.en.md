@@ -5,7 +5,7 @@ date: '2020-08-16'
 slug: []
 categories: []
 tags: []
-description: ''
+description: "This article explains how to use RStudio to configure and start a SageMaker hyperparameter tuning job with static and tunable hyperparameters using the built-in XGBoost algorithm. Along the way we have a closer look at the underlying mechanisms of SageMaker hyperparameter tuning jobs."
 externalLink: ''
 series: []
 ---

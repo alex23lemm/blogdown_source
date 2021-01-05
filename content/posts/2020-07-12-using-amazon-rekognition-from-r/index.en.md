@@ -5,7 +5,7 @@ date: '2020-07-12'
 slug: []
 categories: []
 tags: []
-description: ''
+description: 'This article explains how to access Amazon Rekognition from R using the paws package, an AWS SDK for R. The examples focus on how to use Rekognition's “text-in-image” and “face comparison” features using R.'
 externalLink: ''
 series: []
 ---

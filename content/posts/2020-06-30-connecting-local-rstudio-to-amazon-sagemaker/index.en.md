@@ -5,7 +5,7 @@ date: '2020-06-30'
 slug: []
 categories: []
 tags: []
-description: ''
+description: "This article explains how to configure your (local) RStudio environment as a remote control to connect to SageMaker to train, tune, evaluate, deploy and monitor machine learning models in the cloud."
 externalLink: ''
 series: []
 ---
