@@ -30,17 +30,13 @@ The entire code of this article is also part of the self-paced and fully reprodu
 
 ## Prerequisites
 
-In short, you need to have an IAM user with programmatic access to the AWS API and you need to save the user's access key ID and secret access key as R environment variables:
+In short, you need to have an IAM admin user with programmatic access to the AWS API and you need to save the user's access key ID and secret access key as R environment variables:
 
-**AWS Cloud**
+* You need to have access to an AWS account using an IAM user. [AWS Free Tier](https://aws.amazon.com/de/free/) does also work for this workshop.
 
-* It is a plus if you have some basic familiarity with the AWS Console.
+* The IAM user needs to come with security credentials that allows him to access AWS (1) [programmatically via the API](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) using an **access key ID** and a **secret access key** and (2) via the AWS Management Console. 
 
-* You need to have access to an AWS account using an IAM user. [AWS Free Tier](https://aws.amazon.com/free/) does also work for this workshop.
-
-* The IAM user needs to come with [security credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) (Access key ID, Secret access key) that allows him to make secure requests to AWS service APIs. 
-
-* You need to make sure that the `AmazonRekognitionFullAccess` policy is either attached to your IAM user directly or to a group your user is a member of. See [the official documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html) for changing permissions for an IAM user.
+* For simplicity, you can use an IAM admin user to follow along: Attach the `AdministratorAccess` permissions either directly to your IAM user or to a group your user is a member of. See [the official documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) for creating your first IAM admin user and group.
 
 **Local installations & configuration**
 
@@ -51,6 +47,8 @@ AWS_ACCESS_KEY_ID = [YOUR_ACCESS_KEY_ID]
 AWS_SECRET_ACCESS_KEY = [YOUR_SECRET_ACCESS_KEY]
 AWS_REGION = [CHOOSE_A_REGION_ID_LIKE_us-east-1]
 ```
+
+* Make to sure to install the remaining 4 R packages referenced in the *Loading the necessary libraries* section below on your machine. 
 
 Using AWS Rekognition following the examples below should come at no cost. As of writing this article, the service is part of AWS Free Tier, which lasts 12 months and allows you analyze 5,000 images per month and store 1,000 pieces of face metadata per month.
 
@@ -66,7 +64,6 @@ OK, enough talking! Let's get started.
 ## Loading the necessary libraries
 
 First we load the necessary libraries: Using `paws` is a no brainer here. We will use `purrr`'s magic and `tibble` to parse the responses of our API requests. We will use `readr` primarily to read binary data of image files and `magick` to add Bounding Boxes to images after having received their coordinates via an API response. 
-
 
 ```r
 library(paws)
