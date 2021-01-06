@@ -44,7 +44,7 @@ The entire code of this article is also part of a self-paced and fully reproduci
 
 In short, you need to have an IAM admin user with programmatic access to the AWS API and you need to save the user's access key ID and secret access key as R environment variables:
 
-* You need to have access to an AWS account using an IAM user. [AWS Free Tier](https://aws.amazon.com/de/free/) does also work for this workshop.
+* You need to have access to an AWS account using an IAM user. 
 
 * The IAM user needs to come with security credentials that allows him to access AWS (1) [programmatically via the API](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) using an **access key ID** and a **secret access key** and (2) via the AWS Management Console. 
 
@@ -88,7 +88,7 @@ library(magick)
 
 ## Step 0: Collect and preprocess your image data
 
-We collected 75 free and publicly available images containing the Nike Swoosh logo from [pexels.com](https://www.pexels.com/), preprocessed/scaled the images, and uploaded 70 of the preprocessed images as a dataset to Kaggle that we will use to train the Swoosh detector model. The remaining 5 of the pre-processed images come with this repository as a hold-out test set for making real-time predictions. 
+We collected 75 free and publicly available images containing the Nike Swoosh logo from [pexels.com](https://www.pexels.com/), preprocessed/scaled the images, and uploaded 70 of the preprocessed images as a dataset to Kaggle that we will use to train the Swoosh detector model. The remaining 5 of the pre-processed images come with [this repository](https://github.com/alex23lemm/AWS-AI-Services-R-Workshop/tree/master/04_Rekognition_Custom_Labels_and_R/images/inference) as a hold-out test set for making real-time predictions. 
 
 Please [navigate to the Nike Swoosh Compilation dataset](https://www.kaggle.com/alex23lemm/nike-swoosh-compilation) on Kaggle, click on the page's **Download** button,  and unzip **archive.zip** once the download is complete. 
 
@@ -1018,13 +1018,15 @@ rek$start_project_version(ProjectVersionArn = model_arn,
 
 ## Summary 
 
-In this workshop module we built our own Swoosh detection model using Amazon Rekognition Custom Labels. What are our take home messages?
+In this article we described how to build our own Swoosh detection model using Amazon Rekognition Custom Labels. What are our take home messages?
 
 * You can get started quickly building your own custom object detection and images classification models from scratch just by providing the labeled training data. You don't need to have any Deep Learning expertise and you can use Amazon Rekognition Custom Labels to start exploring this particular Machine Learning domain.  
 
 * Even small training data can produce very robust models that might already satisfy your production requirements. You can also use Rekognition Custom Labels models to build first baseline models.
 
-* Don't disqualify trained models based on the model performance metrics too quickly. Especially, when the test set is relatively small. In our case, almost 50% of the False Positives in the test set were introduced by a single image. Besides mediocre model performance metrics, our Swoosh detection model had all 16 bounding box predictions in the 5 images of the hold-out test set correctly and had only one minor error when it counted a detected Swoosh twice.  
+* Don't disqualify trained models based on the model performance metrics too quickly. Especially, when the test set is relatively small. In our case, almost 50% of the False Positives in the test set were introduced by a single image. Besides mediocre model performance metrics, our Swoosh detection model had all 16 bounding box predictions in the 5 images of the hold-out test set correctly and had only one minor error when it counted a detected Swoosh twice. 
+
+* You can easily integrate Amazon Rekognition Custom Labels models into your R and Shiny applications similar to other AWS AI Services which [we describe here](https://github.com/alex23lemm/AWS-AI-Services-R-Workshop/blob/master/03_GoT_Shiny_app/Instructions.md).
 
 
 
