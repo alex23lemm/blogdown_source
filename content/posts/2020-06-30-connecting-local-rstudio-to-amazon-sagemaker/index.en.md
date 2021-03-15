@@ -16,6 +16,8 @@ own (local) RStudio installation as an alternative to SageMaker Notebooks
 to connect to SageMaker to train, tune, evaluate, deploy and monitor machine 
 learning models in the cloud.
 
+![](images/workshop_teaser.png)
+
 We will use a single project example throughout the article series to 
 explain the entire machine learning process end-to-end using SageMaker from 
 a data science practitioner perspective. In addition, you will gain gain a 
